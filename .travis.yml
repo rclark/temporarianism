@@ -2,6 +2,7 @@ language: node_js
 script:
   - echo $SQS_MESSAGE
   - echo $SOME_VARIABLE
+  - echo $HOME
 env:
   global:
     - secure: OL0TiXIYN1BMW3ajUETeXDPsHybdhmCaNafaENsn17zAGnHDx+uu7Sf6jJlxdiNX3mfB/FPV3SzjQxpZwMH89Diie2IgeRI75UgFG56T5mroMDGFQgPFBt5QhCSMxEz9U5Z7IAl3ztr7XIvQGkYcpfD7QWfGTwtfex98luBflpa9lCdVMrkiMCiyP2wUELLGbe9l2HpyUU3n/LMl9a/tpvmfQFIE+Gu/aSmLXHlZCocHQmNHtZ9HRIwP+DYC9EZvFh9qx5gpmG8tOPLQeCILnAIgG498fTCKnIWhc9gbQ+rec9pRM5R7HqH403jYIxMU3ya1IyySV5sowtiMugffSg==
