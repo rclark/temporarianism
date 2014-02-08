@@ -3,8 +3,6 @@ script:
   - echo $SQS_MESSAGE
   - echo $SOME_VARIABLE
   - echo $HOME
-before_install:
-  - this-will-fail
 install:
   - this-will-fail-too
 env:
