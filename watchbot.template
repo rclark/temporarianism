@@ -1,0 +1,43 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Temporarianism",
+    "Parameters": {
+        "ServiceRepo": {
+            "Type": "String",
+            "Default": "git@github.com:rclark/temporarianism.git"
+        },
+        "ServiceRepoSHA": {
+            "Type": "String",
+            "Default": "master"
+        },
+        "SumoLogicEmail": {
+          "Type": "String"
+        },
+        "SumoLogicPassword": {
+          "Type": "String"
+        },
+        "LiberatoEmail": {
+          "Type": "String"
+        },
+        "LiberatoApiKey": {
+          "Type": "String"
+        }
+    },
+    "Resources": {
+        "Watchbot": {
+            "Type": "AWS::CloudFormation::Stack",
+            "Properties": {
+               "TemplateURL": "https://mapbox.s3.amazonaws.com/watchbot/dev-a543de8.template",
+               "Parameters": {
+                   "ServiceRepo": { "Ref": "ServiceRepo" },
+                   "ServiceRepoSHA": { "Ref": "ServiceRepoSHA" },
+                   "BucketName": "watchbot-production",
+                   "SumoLogicEmail": { "Ref": "SumoLogicEmail" },
+                   "SumoLogicPassword": { "Ref": "SumoLogicPassword" },
+                   "LiberatoEmail": { "Ref": "LiberatoEmail" },
+                   "LiberatoApiKey": { "Ref": "LiberatoApiKey" }
+                }
+            }
+        }
+    }
+}
