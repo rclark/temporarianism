@@ -27,11 +27,11 @@
         "Watchbot": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-               "TemplateURL": "https://s3.amazonaws.com/cfn-config-templates-234858372212-us-east-1/watchbot-buildpack-logging.template",
+               "TemplateURL": "https://s3.amazonaws.com/cf-templates-mapbox-us-east-1/watchbot/watchbot-buildpack-logging.template",
                "Parameters": {
                    "ServiceRepo": { "Ref": "ServiceRepo" },
                    "ServiceRepoSHA": { "Ref": "ServiceRepoSHA" },
-                   "BucketName": "watchbot-production",
+                   "LogBucket": "watchbot-production",
                    "SumoLogicEmail": { "Ref": "SumoLogicEmail" },
                    "SumoLogicPassword": { "Ref": "SumoLogicPassword" },
                    "LibratoEmail": { "Ref": "LibratoEmail" },
