@@ -27,7 +27,7 @@
         "Watchbot": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-               "TemplateURL": "https://s3.amazonaws.com/cf-templates-mapbox-us-east-1/watchbot/watchbot-buildpack-logging.template",
+               "TemplateURL": "https://s3.amazonaws.com/cf-templates-mapbox-us-east-1/watchbot/watchbot.template",
                "Parameters": {
                    "ServiceRepo": { "Ref": "ServiceRepo" },
                    "ServiceRepoSHA": { "Ref": "ServiceRepoSHA" },
