@@ -16,10 +16,10 @@
         "SumoLogicPassword": {
           "Type": "String"
         },
-        "LiberatoEmail": {
+        "LibratoEmail": {
           "Type": "String"
         },
-        "LiberatoApiKey": {
+        "LibratoAPIKey": {
           "Type": "String"
         }
     },
@@ -34,8 +34,8 @@
                    "BucketName": "watchbot-production",
                    "SumoLogicEmail": { "Ref": "SumoLogicEmail" },
                    "SumoLogicPassword": { "Ref": "SumoLogicPassword" },
-                   "LiberatoEmail": { "Ref": "LiberatoEmail" },
-                   "LiberatoApiKey": { "Ref": "LiberatoApiKey" }
+                   "LibratoEmail": { "Ref": "LibratoEmail" },
+                   "LibratoAPIKey": { "Ref": "LibratoAPIKey" }
                 }
             }
         }
