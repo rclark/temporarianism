@@ -3,7 +3,7 @@ node_js:
   - "0.10"
 before_deploy:
   - mkdir build
-  - cp watcbot.template build/$TRAVIS_COMMIT.template
+  - cp watchbot.template build/$TRAVIS_COMMIT.template
 deploy:
   provider: s3
   secret_access_key:
