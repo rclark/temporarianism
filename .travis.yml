@@ -4,6 +4,7 @@ node_js:
 before_deploy:
   - mkdir build
   - cp watchbot.template build/$TRAVIS_COMMIT.template
+  - ls build
 deploy:
   provider: s3
   secret_access_key:
