@@ -1,0 +1,7 @@
+deploy:
+  provider: s3
+  secret_access_key:
+    secure: kVZqiUrAeAscbufi1iXjiDECVL05/7lomAwzSxTOqgntZ72JuLQqzKQKgnm8UZj0jU+op3V+0gzQ0BxUIuHUu66yQACxBl7Yt+ko73vs6ozLTxNuJfXRYSzeYzi3yPVQHOxHLC9Cp22e2z4nim9sOztLWg+aY4nAgDQBeZoEOoo=
+  access_key_id: AKIAISALHSHWEDQVR7EQ  
+  bucket: travis-testing
+  upload-dir: temporarianism
